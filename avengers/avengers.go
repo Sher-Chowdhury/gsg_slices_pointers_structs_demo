@@ -18,6 +18,11 @@ func AddAvenger(aSuperHeroName string, aRealName string) {
 		RealName:      aRealName,
 	}
 	id++
+
+	/*
+			We use "&" so that the address of the hero object is appended to the
+		    avengers pointers slice.
+	*/
 	avengers = append(avengers, &hero)
 }
 
